@@ -3,10 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E1289A71FB6828893B6D78F /* Pods_SimpleBookkeeping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2A12A948E57DAA31BEE94A /* Pods_SimpleBookkeeping.framework */; };
+		D80384D92722F1A100FBAE54 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80384D72722F1A100FBAE54 /* LoginViewController.m */; };
+		D80384DA2722F1A100FBAE54 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80384D82722F1A100FBAE54 /* LoginViewController.xib */; };
+		D80384DD272328DC00FBAE54 /* MBProgressHUD+JD.m in Sources */ = {isa = PBXBuildFile; fileRef = D80384DC272328DC00FBAE54 /* MBProgressHUD+JD.m */; };
+		D80384E62724352D00FBAE54 /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D80384E32724352D00FBAE54 /* images.bundle */; };
+		D80384E9272438D200FBAE54 /* HXCMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D80384E8272438D200FBAE54 /* HXCMBProgressHUD.m */; };
+		D82E8623272846C500B755C0 /* PropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D82E8622272846C500B755C0 /* PropertyList.plist */; };
+		D82E86272728709A00B755C0 /* SetBudgetSurplusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D82E86252728709A00B755C0 /* SetBudgetSurplusVC.m */; };
+		D82E86282728709A00B755C0 /* SetBudgetSurplusVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82E86262728709A00B755C0 /* SetBudgetSurplusVC.xib */; };
+		D82FAD90272BB3C700D12A3C /* HumanBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D82FAD8E272BB3C700D12A3C /* HumanBooksViewController.m */; };
+		D82FAD91272BB3C700D12A3C /* HumanBooksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82FAD8F272BB3C700D12A3C /* HumanBooksViewController.xib */; };
+		D82FAD9B272E9AF200D12A3C /* HumanBooksCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D82FAD99272E9AF200D12A3C /* HumanBooksCell.m */; };
+		D82FAD9C272E9AF200D12A3C /* HumanBooksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82FAD9A272E9AF200D12A3C /* HumanBooksCell.xib */; };
+		D82FAD9F272EA9B300D12A3C /* HumanBooksHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D82FAD9E272EA9B300D12A3C /* HumanBooksHeaderView.m */; };
+		D82FADA4272ED54A00D12A3C /* RecordHumanBooksVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D82FADA2272ED54A00D12A3C /* RecordHumanBooksVC.m */; };
+		D82FADA5272ED54A00D12A3C /* RecordHumanBooksVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82FADA3272ED54A00D12A3C /* RecordHumanBooksVC.xib */; };
+		D82FADA8272EE79000D12A3C /* HumanBooksModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D82FADA7272EE79000D12A3C /* HumanBooksModel.m */; };
+		D82FADAA273456CE00D12A3C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82FADA9273456CE00D12A3C /* MobileCoreServices.framework */; };
+		D838A4C727148F1600317F58 /* RecoredEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D838A4C627148F1600317F58 /* RecoredEditVC.m */; };
+		D838A4CA27149B9A00317F58 /* HXCUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D838A4C927149B9A00317F58 /* HXCUIButton.m */; };
+		D838A4D12715C9FE00317F58 /* TypeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D838A4CF2715C9FE00317F58 /* TypeCollectionViewCell.m */; };
+		D838A4D22715C9FE00317F58 /* TypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D838A4D02715C9FE00317F58 /* TypeCollectionViewCell.xib */; };
+		D838A4D52716EFFF00317F58 /* SortManagementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D838A4D42716EFFF00317F58 /* SortManagementVC.m */; };
+		D838A4DA2716F94200317F58 /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = D838A4D92716F94200317F58 /* Tool.m */; };
+		D838A4DE2717043000317F58 /* SortManagementHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D838A4DC2717043000317F58 /* SortManagementHeaderView.m */; };
+		D838A4DF2717043000317F58 /* SortManagementHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D838A4DD2717043000317F58 /* SortManagementHeaderView.xib */; };
+		D838A4E2271995BC00317F58 /* UserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D838A4E1271995BB00317F58 /* UserDataModel.m */; };
+		D838A4E827199D9C00317F58 /* UPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D838A4E727199D9C00317F58 /* UPButton.m */; };
+		D838A4EB2719AFA100317F58 /* HomeShowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D838A4EA2719AFA100317F58 /* HomeShowModel.m */; };
+		D838A4F02719D82B00317F58 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D838A4EE2719D82B00317F58 /* MineViewController.m */; };
+		D838A4F12719D82B00317F58 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D838A4EF2719D82B00317F58 /* MineViewController.xib */; };
 		D849470327107D70006900D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D849470227107D70006900D9 /* AppDelegate.m */; };
 		D849470627107D70006900D9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D849470527107D70006900D9 /* SceneDelegate.m */; };
 		D849470927107D70006900D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D849470827107D70006900D9 /* ViewController.m */; };
@@ -15,9 +46,85 @@
 		D849471127107D79006900D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D849471027107D79006900D9 /* Assets.xcassets */; };
 		D849471427107D79006900D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D849471227107D79006900D9 /* LaunchScreen.storyboard */; };
 		D849471727107D79006900D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D849471627107D79006900D9 /* main.m */; };
+		D849472027108755006900D9 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D849471F27108755006900D9 /* HeaderView.m */; };
+		D84947272710BC3C006900D9 /* RecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D84947252710BC3C006900D9 /* RecordTableViewCell.m */; };
+		D84947282710BC3C006900D9 /* RecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84947262710BC3C006900D9 /* RecordTableViewCell.xib */; };
+		D849472C2710C277006900D9 /* RecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D849472B2710C277006900D9 /* RecordModel.m */; };
+		D849473127146B2F006900D9 /* RecordMoneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D849473027146B2F006900D9 /* RecordMoneyViewController.m */; };
+		D849473427146C14006900D9 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D849473327146C14006900D9 /* Test.swift */; };
+		D86035FF272463CD00B8D86D /* DataSaveSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D86035FD272463CD00B8D86D /* DataSaveSetViewController.m */; };
+		D8603600272463CD00B8D86D /* DataSaveSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86035FE272463CD00B8D86D /* DataSaveSetViewController.xib */; };
+		D86036062727084600B8D86D /* TimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D86036052727084600B8D86D /* TimeTool.m */; };
+		D8BA176F272A45D2005C3961 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BA176D272A45D2005C3961 /* FeedbackViewController.m */; };
+		D8BA1770272A45D2005C3961 /* FeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8BA176E272A45D2005C3961 /* FeedbackViewController.xib */; };
+		D8CAAFE1271A97F400FD93AF /* RecordTypeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8CAAFE0271A97F400FD93AF /* RecordTypeList.plist */; };
+		D8D26A7A271EE3C000D121F9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D26A78271EE3C000D121F9 /* DetailViewController.m */; };
+		D8D26A9E2721873E00D121F9 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D26A9D2721873E00D121F9 /* DetailViewController.xib */; };
+		D8D26AA127218F9700D121F9 /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D26AA027218F9700D121F9 /* DetailView.m */; };
+		D8D26AA327218FD100D121F9 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D26AA227218FD100D121F9 /* DetailView.xib */; };
+		D8ED6F08271C81420031ABF2 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ED6F07271C81420031ABF2 /* UserInfoModel.m */; };
+		D8ED6F11271C8A150031ABF2 /* MineDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ED6F0F271C8A150031ABF2 /* MineDetailViewController.m */; };
+		D8ED6F12271C8A150031ABF2 /* MineDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8ED6F10271C8A150031ABF2 /* MineDetailViewController.xib */; };
+		D8ED6F16271C8DE80031ABF2 /* CommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ED6F15271C8DE80031ABF2 /* CommonModel.m */; };
+		D8FB607D274BE4E900E7EDA3 /* RecordDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FB607B274BE4E900E7EDA3 /* RecordDetailVC.m */; };
+		D8FB607E274BE4E900E7EDA3 /* RecordDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8FB607C274BE4E900E7EDA3 /* RecordDetailVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E2A12A948E57DAA31BEE94A /* Pods_SimpleBookkeeping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleBookkeeping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F791F99AD901E1DE310795 /* Pods-SimpleBookkeeping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBookkeeping.release.xcconfig"; path = "Target Support Files/Pods-SimpleBookkeeping/Pods-SimpleBookkeeping.release.xcconfig"; sourceTree = "<group>"; };
+		C4E47314096FB3F2F2CDDED3 /* Pods-SimpleBookkeeping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleBookkeeping.debug.xcconfig"; path = "Target Support Files/Pods-SimpleBookkeeping/Pods-SimpleBookkeeping.debug.xcconfig"; sourceTree = "<group>"; };
+		D80384D62722F1A100FBAE54 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D80384D72722F1A100FBAE54 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D80384D82722F1A100FBAE54 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		D80384DB272328DC00FBAE54 /* MBProgressHUD+JD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+JD.h"; sourceTree = "<group>"; };
+		D80384DC272328DC00FBAE54 /* MBProgressHUD+JD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+JD.m"; sourceTree = "<group>"; };
+		D80384E32724352D00FBAE54 /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
+		D80384E7272438D100FBAE54 /* HXCMBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXCMBProgressHUD.h; sourceTree = "<group>"; };
+		D80384E8272438D200FBAE54 /* HXCMBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXCMBProgressHUD.m; sourceTree = "<group>"; };
+		D82E8622272846C500B755C0 /* PropertyList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PropertyList.plist; sourceTree = "<group>"; };
+		D82E86242728709A00B755C0 /* SetBudgetSurplusVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetBudgetSurplusVC.h; sourceTree = "<group>"; };
+		D82E86252728709A00B755C0 /* SetBudgetSurplusVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetBudgetSurplusVC.m; sourceTree = "<group>"; };
+		D82E86262728709A00B755C0 /* SetBudgetSurplusVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetBudgetSurplusVC.xib; sourceTree = "<group>"; };
+		D82FAD8D272BB3C700D12A3C /* HumanBooksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HumanBooksViewController.h; sourceTree = "<group>"; };
+		D82FAD8E272BB3C700D12A3C /* HumanBooksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HumanBooksViewController.m; sourceTree = "<group>"; };
+		D82FAD8F272BB3C700D12A3C /* HumanBooksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HumanBooksViewController.xib; sourceTree = "<group>"; };
+		D82FAD98272E9AF200D12A3C /* HumanBooksCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HumanBooksCell.h; sourceTree = "<group>"; };
+		D82FAD99272E9AF200D12A3C /* HumanBooksCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HumanBooksCell.m; sourceTree = "<group>"; };
+		D82FAD9A272E9AF200D12A3C /* HumanBooksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HumanBooksCell.xib; sourceTree = "<group>"; };
+		D82FAD9D272EA9B300D12A3C /* HumanBooksHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HumanBooksHeaderView.h; sourceTree = "<group>"; };
+		D82FAD9E272EA9B300D12A3C /* HumanBooksHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HumanBooksHeaderView.m; sourceTree = "<group>"; };
+		D82FADA1272ED54A00D12A3C /* RecordHumanBooksVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordHumanBooksVC.h; sourceTree = "<group>"; };
+		D82FADA2272ED54A00D12A3C /* RecordHumanBooksVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordHumanBooksVC.m; sourceTree = "<group>"; };
+		D82FADA3272ED54A00D12A3C /* RecordHumanBooksVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordHumanBooksVC.xib; sourceTree = "<group>"; };
+		D82FADA6272EE79000D12A3C /* HumanBooksModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HumanBooksModel.h; sourceTree = "<group>"; };
+		D82FADA7272EE79000D12A3C /* HumanBooksModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HumanBooksModel.m; sourceTree = "<group>"; };
+		D82FADA9273456CE00D12A3C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D838A4C527148F1600317F58 /* RecoredEditVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoredEditVC.h; sourceTree = "<group>"; };
+		D838A4C627148F1600317F58 /* RecoredEditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoredEditVC.m; sourceTree = "<group>"; };
+		D838A4C827149B9A00317F58 /* HXCUIButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXCUIButton.h; sourceTree = "<group>"; };
+		D838A4C927149B9A00317F58 /* HXCUIButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXCUIButton.m; sourceTree = "<group>"; };
+		D838A4CD2715C0B800317F58 /* API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		D838A4CE2715C9FE00317F58 /* TypeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeCollectionViewCell.h; sourceTree = "<group>"; };
+		D838A4CF2715C9FE00317F58 /* TypeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypeCollectionViewCell.m; sourceTree = "<group>"; };
+		D838A4D02715C9FE00317F58 /* TypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		D838A4D32716EFFF00317F58 /* SortManagementVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortManagementVC.h; sourceTree = "<group>"; };
+		D838A4D42716EFFF00317F58 /* SortManagementVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortManagementVC.m; sourceTree = "<group>"; };
+		D838A4D62716F51F00317F58 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D838A4D82716F94200317F58 /* Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		D838A4D92716F94200317F58 /* Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		D838A4DB2717043000317F58 /* SortManagementHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortManagementHeaderView.h; sourceTree = "<group>"; };
+		D838A4DC2717043000317F58 /* SortManagementHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortManagementHeaderView.m; sourceTree = "<group>"; };
+		D838A4DD2717043000317F58 /* SortManagementHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SortManagementHeaderView.xib; sourceTree = "<group>"; };
+		D838A4E0271995BB00317F58 /* UserDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDataModel.h; sourceTree = "<group>"; };
+		D838A4E1271995BB00317F58 /* UserDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDataModel.m; sourceTree = "<group>"; };
+		D838A4E627199D9C00317F58 /* UPButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UPButton.h; sourceTree = "<group>"; };
+		D838A4E727199D9C00317F58 /* UPButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UPButton.m; sourceTree = "<group>"; };
+		D838A4E92719AFA100317F58 /* HomeShowModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeShowModel.h; sourceTree = "<group>"; };
+		D838A4EA2719AFA100317F58 /* HomeShowModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeShowModel.m; sourceTree = "<group>"; };
+		D838A4ED2719D82B00317F58 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		D838A4EE2719D82B00317F58 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		D838A4EF2719D82B00317F58 /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
 		D84946FE27107D70006900D9 /* SimpleBookkeeping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleBookkeeping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D849470127107D70006900D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D849470227107D70006900D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,6 +138,42 @@
 		D849471327107D79006900D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D849471527107D79006900D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D849471627107D79006900D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D849471E27108755006900D9 /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		D849471F27108755006900D9 /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		D84947242710BC3C006900D9 /* RecordTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordTableViewCell.h; sourceTree = "<group>"; };
+		D84947252710BC3C006900D9 /* RecordTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordTableViewCell.m; sourceTree = "<group>"; };
+		D84947262710BC3C006900D9 /* RecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordTableViewCell.xib; sourceTree = "<group>"; };
+		D849472A2710C277006900D9 /* RecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordModel.h; sourceTree = "<group>"; };
+		D849472B2710C277006900D9 /* RecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordModel.m; sourceTree = "<group>"; };
+		D849472F27146B2F006900D9 /* RecordMoneyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordMoneyViewController.h; sourceTree = "<group>"; };
+		D849473027146B2F006900D9 /* RecordMoneyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordMoneyViewController.m; sourceTree = "<group>"; };
+		D849473227146C13006900D9 /* SimpleBookkeeping-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleBookkeeping-Bridging-Header.h"; sourceTree = "<group>"; };
+		D849473327146C14006900D9 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		D86035FC272463CD00B8D86D /* DataSaveSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSaveSetViewController.h; sourceTree = "<group>"; };
+		D86035FD272463CD00B8D86D /* DataSaveSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataSaveSetViewController.m; sourceTree = "<group>"; };
+		D86035FE272463CD00B8D86D /* DataSaveSetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataSaveSetViewController.xib; sourceTree = "<group>"; };
+		D86036042727084600B8D86D /* TimeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeTool.h; sourceTree = "<group>"; };
+		D86036052727084600B8D86D /* TimeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeTool.m; sourceTree = "<group>"; };
+		D8BA176C272A45D2005C3961 /* FeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		D8BA176D272A45D2005C3961 /* FeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		D8BA176E272A45D2005C3961 /* FeedbackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedbackViewController.xib; sourceTree = "<group>"; };
+		D8CAAFE0271A97F400FD93AF /* RecordTypeList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RecordTypeList.plist; sourceTree = "<group>"; };
+		D8D26A77271EE3C000D121F9 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D8D26A78271EE3C000D121F9 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D8D26A9D2721873E00D121F9 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		D8D26A9F27218F9700D121F9 /* DetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
+		D8D26AA027218F9700D121F9 /* DetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
+		D8D26AA227218FD100D121F9 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		D8ED6F06271C81420031ABF2 /* UserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
+		D8ED6F07271C81420031ABF2 /* UserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
+		D8ED6F0E271C8A150031ABF2 /* MineDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineDetailViewController.h; sourceTree = "<group>"; };
+		D8ED6F0F271C8A150031ABF2 /* MineDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineDetailViewController.m; sourceTree = "<group>"; };
+		D8ED6F10271C8A150031ABF2 /* MineDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineDetailViewController.xib; sourceTree = "<group>"; };
+		D8ED6F14271C8DE80031ABF2 /* CommonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonModel.h; sourceTree = "<group>"; };
+		D8ED6F15271C8DE80031ABF2 /* CommonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonModel.m; sourceTree = "<group>"; };
+		D8FB607A274BE4E900E7EDA3 /* RecordDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordDetailVC.h; sourceTree = "<group>"; };
+		D8FB607B274BE4E900E7EDA3 /* RecordDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordDetailVC.m; sourceTree = "<group>"; };
+		D8FB607C274BE4E900E7EDA3 /* RecordDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordDetailVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,17 +181,127 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E1289A71FB6828893B6D78F /* Pods_SimpleBookkeeping.framework in Frameworks */,
+				D82FADAA273456CE00D12A3C /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		317A735CCE36ACAD5692B318 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D82FADA9273456CE00D12A3C /* MobileCoreServices.framework */,
+				0E2A12A948E57DAA31BEE94A /* Pods_SimpleBookkeeping.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EBF2B5BDE0F13F7B901DE14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4E47314096FB3F2F2CDDED3 /* Pods-SimpleBookkeeping.debug.xcconfig */,
+				B7F791F99AD901E1DE310795 /* Pods-SimpleBookkeeping.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D80384D52722F16000FBAE54 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				D80384D62722F1A100FBAE54 /* LoginViewController.h */,
+				D80384D72722F1A100FBAE54 /* LoginViewController.m */,
+				D80384D82722F1A100FBAE54 /* LoginViewController.xib */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		D80384E12724352D00FBAE54 /* HXCProgressHUDK */ = {
+			isa = PBXGroup;
+			children = (
+				D80384E7272438D100FBAE54 /* HXCMBProgressHUD.h */,
+				D80384E8272438D200FBAE54 /* HXCMBProgressHUD.m */,
+				D80384E32724352D00FBAE54 /* images.bundle */,
+			);
+			path = HXCProgressHUDK;
+			sourceTree = "<group>";
+		};
+		D82FAD92272E8F5900D12A3C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D82FAD98272E9AF200D12A3C /* HumanBooksCell.h */,
+				D82FAD99272E9AF200D12A3C /* HumanBooksCell.m */,
+				D82FAD9A272E9AF200D12A3C /* HumanBooksCell.xib */,
+				D82FAD9D272EA9B300D12A3C /* HumanBooksHeaderView.h */,
+				D82FAD9E272EA9B300D12A3C /* HumanBooksHeaderView.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D82FADA0272ED4F900D12A3C /* HumanBooks */ = {
+			isa = PBXGroup;
+			children = (
+				D82FAD92272E8F5900D12A3C /* ViewModel */,
+				D82FAD8D272BB3C700D12A3C /* HumanBooksViewController.h */,
+				D82FAD8E272BB3C700D12A3C /* HumanBooksViewController.m */,
+				D82FAD8F272BB3C700D12A3C /* HumanBooksViewController.xib */,
+				D82FADA1272ED54A00D12A3C /* RecordHumanBooksVC.h */,
+				D82FADA2272ED54A00D12A3C /* RecordHumanBooksVC.m */,
+				D82FADA3272ED54A00D12A3C /* RecordHumanBooksVC.xib */,
+				D82FADA6272EE79000D12A3C /* HumanBooksModel.h */,
+				D82FADA7272EE79000D12A3C /* HumanBooksModel.m */,
+			);
+			path = HumanBooks;
+			sourceTree = "<group>";
+		};
+		D838A4D72716F91F00317F58 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D80384E12724352D00FBAE54 /* HXCProgressHUDK */,
+				D838A4D82716F94200317F58 /* Tool.h */,
+				D838A4D92716F94200317F58 /* Tool.m */,
+				D838A4E627199D9C00317F58 /* UPButton.h */,
+				D838A4E727199D9C00317F58 /* UPButton.m */,
+				D80384DB272328DC00FBAE54 /* MBProgressHUD+JD.h */,
+				D80384DC272328DC00FBAE54 /* MBProgressHUD+JD.m */,
+				D86036042727084600B8D86D /* TimeTool.h */,
+				D86036052727084600B8D86D /* TimeTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		D838A4EC2719D7AC00317F58 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				D80384D52722F16000FBAE54 /* login */,
+				D8ED6F13271C8DA50031ABF2 /* Model */,
+				D838A4ED2719D82B00317F58 /* MineViewController.h */,
+				D838A4EE2719D82B00317F58 /* MineViewController.m */,
+				D838A4EF2719D82B00317F58 /* MineViewController.xib */,
+				D8ED6F0E271C8A150031ABF2 /* MineDetailViewController.h */,
+				D8ED6F0F271C8A150031ABF2 /* MineDetailViewController.m */,
+				D8ED6F10271C8A150031ABF2 /* MineDetailViewController.xib */,
+				D86035FC272463CD00B8D86D /* DataSaveSetViewController.h */,
+				D86035FD272463CD00B8D86D /* DataSaveSetViewController.m */,
+				D86035FE272463CD00B8D86D /* DataSaveSetViewController.xib */,
+				D82E86242728709A00B755C0 /* SetBudgetSurplusVC.h */,
+				D82E86252728709A00B755C0 /* SetBudgetSurplusVC.m */,
+				D82E86262728709A00B755C0 /* SetBudgetSurplusVC.xib */,
+				D8BA176C272A45D2005C3961 /* FeedbackViewController.h */,
+				D8BA176D272A45D2005C3961 /* FeedbackViewController.m */,
+				D8BA176E272A45D2005C3961 /* FeedbackViewController.xib */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
 		D84946F527107D70006900D9 = {
 			isa = PBXGroup;
 			children = (
 				D849470027107D70006900D9 /* SimpleBookkeeping */,
 				D84946FF27107D70006900D9 /* Products */,
+				3EBF2B5BDE0F13F7B901DE14 /* Pods */,
+				317A735CCE36ACAD5692B318 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,13 +323,107 @@
 				D849470727107D70006900D9 /* ViewController.h */,
 				D849470827107D70006900D9 /* ViewController.m */,
 				D849470A27107D70006900D9 /* Main.storyboard */,
+				D82FADA0272ED4F900D12A3C /* HumanBooks */,
+				D8E87792271B1CDC00CE5032 /* Detail */,
+				D849472D27146418006900D9 /* Record */,
+				D838A4EC2719D7AC00317F58 /* Mine */,
+				D849471D27108714006900D9 /* viewModel */,
+				D838A4D72716F91F00317F58 /* Tool */,
+				D84947292710C248006900D9 /* Model */,
 				D849471027107D79006900D9 /* Assets.xcassets */,
 				D849471227107D79006900D9 /* LaunchScreen.storyboard */,
 				D849471527107D79006900D9 /* Info.plist */,
 				D849471627107D79006900D9 /* main.m */,
 				D849470D27107D70006900D9 /* SimpleBookkeeping.xcdatamodeld */,
+				D849473327146C14006900D9 /* Test.swift */,
+				D849473227146C13006900D9 /* SimpleBookkeeping-Bridging-Header.h */,
+				D838A4CD2715C0B800317F58 /* API.h */,
+				D838A4D62716F51F00317F58 /* PrefixHeader.pch */,
 			);
 			path = SimpleBookkeeping;
+			sourceTree = "<group>";
+		};
+		D849471D27108714006900D9 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D849471E27108755006900D9 /* HeaderView.h */,
+				D849471F27108755006900D9 /* HeaderView.m */,
+				D84947242710BC3C006900D9 /* RecordTableViewCell.h */,
+				D84947252710BC3C006900D9 /* RecordTableViewCell.m */,
+				D84947262710BC3C006900D9 /* RecordTableViewCell.xib */,
+				D838A4C827149B9A00317F58 /* HXCUIButton.h */,
+				D838A4C927149B9A00317F58 /* HXCUIButton.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		D84947292710C248006900D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D849472A2710C277006900D9 /* RecordModel.h */,
+				D849472B2710C277006900D9 /* RecordModel.m */,
+				D838A4E0271995BB00317F58 /* UserDataModel.h */,
+				D838A4E1271995BB00317F58 /* UserDataModel.m */,
+				D838A4E92719AFA100317F58 /* HomeShowModel.h */,
+				D838A4EA2719AFA100317F58 /* HomeShowModel.m */,
+				D8ED6F06271C81420031ABF2 /* UserInfoModel.h */,
+				D8ED6F07271C81420031ABF2 /* UserInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D849472D27146418006900D9 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				D838A4C527148F1600317F58 /* RecoredEditVC.h */,
+				D838A4C627148F1600317F58 /* RecoredEditVC.m */,
+				D8FB607A274BE4E900E7EDA3 /* RecordDetailVC.h */,
+				D8FB607B274BE4E900E7EDA3 /* RecordDetailVC.m */,
+				D8FB607C274BE4E900E7EDA3 /* RecordDetailVC.xib */,
+				D849472F27146B2F006900D9 /* RecordMoneyViewController.h */,
+				D849473027146B2F006900D9 /* RecordMoneyViewController.m */,
+				D838A4D32716EFFF00317F58 /* SortManagementVC.h */,
+				D838A4D42716EFFF00317F58 /* SortManagementVC.m */,
+				D82E8622272846C500B755C0 /* PropertyList.plist */,
+				D8CAAFE0271A97F400FD93AF /* RecordTypeList.plist */,
+				D849472E27146B06006900D9 /* view */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		D849472E27146B06006900D9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D838A4CE2715C9FE00317F58 /* TypeCollectionViewCell.h */,
+				D838A4CF2715C9FE00317F58 /* TypeCollectionViewCell.m */,
+				D838A4D02715C9FE00317F58 /* TypeCollectionViewCell.xib */,
+				D838A4DB2717043000317F58 /* SortManagementHeaderView.h */,
+				D838A4DC2717043000317F58 /* SortManagementHeaderView.m */,
+				D838A4DD2717043000317F58 /* SortManagementHeaderView.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D8E87792271B1CDC00CE5032 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				D8D26A77271EE3C000D121F9 /* DetailViewController.h */,
+				D8D26A78271EE3C000D121F9 /* DetailViewController.m */,
+				D8D26A9D2721873E00D121F9 /* DetailViewController.xib */,
+				D8D26A9F27218F9700D121F9 /* DetailView.h */,
+				D8D26AA027218F9700D121F9 /* DetailView.m */,
+				D8D26AA227218FD100D121F9 /* DetailView.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		D8ED6F13271C8DA50031ABF2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8ED6F14271C8DE80031ABF2 /* CommonModel.h */,
+				D8ED6F15271C8DE80031ABF2 /* CommonModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +433,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D849471A27107D79006900D9 /* Build configuration list for PBXNativeTarget "SimpleBookkeeping" */;
 			buildPhases = (
+				7D77F6E46798FF04003EA84C /* [CP] Check Pods Manifest.lock */,
 				D84946FA27107D70006900D9 /* Sources */,
 				D84946FB27107D70006900D9 /* Frameworks */,
 				D84946FC27107D70006900D9 /* Resources */,
+				24B8F7702CEC3D999A56CFCE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -109,6 +458,7 @@
 				TargetAttributes = {
 					D84946FD27107D70006900D9 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -135,24 +485,117 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D82FAD9C272E9AF200D12A3C /* HumanBooksCell.xib in Resources */,
 				D849471427107D79006900D9 /* LaunchScreen.storyboard in Resources */,
+				D82FADA5272ED54A00D12A3C /* RecordHumanBooksVC.xib in Resources */,
+				D8BA1770272A45D2005C3961 /* FeedbackViewController.xib in Resources */,
 				D849471127107D79006900D9 /* Assets.xcassets in Resources */,
+				D8CAAFE1271A97F400FD93AF /* RecordTypeList.plist in Resources */,
+				D82E8623272846C500B755C0 /* PropertyList.plist in Resources */,
+				D8ED6F12271C8A150031ABF2 /* MineDetailViewController.xib in Resources */,
+				D82E86282728709A00B755C0 /* SetBudgetSurplusVC.xib in Resources */,
+				D84947282710BC3C006900D9 /* RecordTableViewCell.xib in Resources */,
+				D838A4DF2717043000317F58 /* SortManagementHeaderView.xib in Resources */,
+				D838A4D22715C9FE00317F58 /* TypeCollectionViewCell.xib in Resources */,
+				D80384E62724352D00FBAE54 /* images.bundle in Resources */,
+				D8D26A9E2721873E00D121F9 /* DetailViewController.xib in Resources */,
+				D80384DA2722F1A100FBAE54 /* LoginViewController.xib in Resources */,
+				D82FAD91272BB3C700D12A3C /* HumanBooksViewController.xib in Resources */,
 				D849470C27107D70006900D9 /* Main.storyboard in Resources */,
+				D838A4F12719D82B00317F58 /* MineViewController.xib in Resources */,
+				D8603600272463CD00B8D86D /* DataSaveSetViewController.xib in Resources */,
+				D8FB607E274BE4E900E7EDA3 /* RecordDetailVC.xib in Resources */,
+				D8D26AA327218FD100D121F9 /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24B8F7702CEC3D999A56CFCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleBookkeeping/Pods-SimpleBookkeeping-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleBookkeeping/Pods-SimpleBookkeeping-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleBookkeeping/Pods-SimpleBookkeeping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D77F6E46798FF04003EA84C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleBookkeeping-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D84946FA27107D70006900D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D849472C2710C277006900D9 /* RecordModel.m in Sources */,
+				D838A4EB2719AFA100317F58 /* HomeShowModel.m in Sources */,
+				D80384D92722F1A100FBAE54 /* LoginViewController.m in Sources */,
+				D8D26AA127218F9700D121F9 /* DetailView.m in Sources */,
+				D8BA176F272A45D2005C3961 /* FeedbackViewController.m in Sources */,
+				D838A4D52716EFFF00317F58 /* SortManagementVC.m in Sources */,
+				D80384E9272438D200FBAE54 /* HXCMBProgressHUD.m in Sources */,
 				D849471727107D79006900D9 /* main.m in Sources */,
+				D838A4D12715C9FE00317F58 /* TypeCollectionViewCell.m in Sources */,
+				D82FAD9B272E9AF200D12A3C /* HumanBooksCell.m in Sources */,
+				D86035FF272463CD00B8D86D /* DataSaveSetViewController.m in Sources */,
+				D849472027108755006900D9 /* HeaderView.m in Sources */,
+				D8ED6F11271C8A150031ABF2 /* MineDetailViewController.m in Sources */,
+				D82FAD90272BB3C700D12A3C /* HumanBooksViewController.m in Sources */,
+				D8ED6F16271C8DE80031ABF2 /* CommonModel.m in Sources */,
+				D82E86272728709A00B755C0 /* SetBudgetSurplusVC.m in Sources */,
+				D8FB607D274BE4E900E7EDA3 /* RecordDetailVC.m in Sources */,
 				D849470927107D70006900D9 /* ViewController.m in Sources */,
+				D838A4DE2717043000317F58 /* SortManagementHeaderView.m in Sources */,
+				D8ED6F08271C81420031ABF2 /* UserInfoModel.m in Sources */,
+				D8D26A7A271EE3C000D121F9 /* DetailViewController.m in Sources */,
+				D82FADA4272ED54A00D12A3C /* RecordHumanBooksVC.m in Sources */,
+				D84947272710BC3C006900D9 /* RecordTableViewCell.m in Sources */,
+				D86036062727084600B8D86D /* TimeTool.m in Sources */,
+				D82FADA8272EE79000D12A3C /* HumanBooksModel.m in Sources */,
+				D838A4CA27149B9A00317F58 /* HXCUIButton.m in Sources */,
 				D849470327107D70006900D9 /* AppDelegate.m in Sources */,
+				D849473127146B2F006900D9 /* RecordMoneyViewController.m in Sources */,
+				D849473427146C14006900D9 /* Test.swift in Sources */,
+				D838A4E827199D9C00317F58 /* UPButton.m in Sources */,
 				D849470F27107D70006900D9 /* SimpleBookkeeping.xcdatamodeld in Sources */,
+				D80384DD272328DC00FBAE54 /* MBProgressHUD+JD.m in Sources */,
+				D838A4F02719D82B00317F58 /* MineViewController.m in Sources */,
 				D849470627107D70006900D9 /* SceneDelegate.m in Sources */,
+				D82FAD9F272EA9B300D12A3C /* HumanBooksHeaderView.m in Sources */,
+				D838A4C727148F1600317F58 /* RecoredEditVC.m in Sources */,
+				D838A4E2271995BC00317F58 /* UserDataModel.m in Sources */,
+				D838A4DA2716F94200317F58 /* Tool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,34 +735,49 @@
 		};
 		D849471B27107D79006900D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4E47314096FB3F2F2CDDED3 /* Pods-SimpleBookkeeping.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SimpleBookkeeping/PrefixHeader.pch";
 				INFOPLIST_FILE = SimpleBookkeeping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hexianchen.SimpleBookkeeping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleBookkeeping/SimpleBookkeeping-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		D849471C27107D79006900D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7F791F99AD901E1DE310795 /* Pods-SimpleBookkeeping.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SimpleBookkeeping/PrefixHeader.pch";
 				INFOPLIST_FILE = SimpleBookkeeping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hexianchen.SimpleBookkeeping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleBookkeeping/SimpleBookkeeping-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

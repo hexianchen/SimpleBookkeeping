@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackViewController">
+            <connections>
+                <outlet property="contactText" destination="BSw-mc-L2F" id="VCX-l3-by3"/>
+                <outlet property="contentTextView" destination="BxD-hN-B5o" id="LQH-iG-ODm"/>
+                <outlet property="errorButton" destination="7Lz-a6-20z" id="j5a-h3-4aV"/>
+                <outlet property="errorLogButton" destination="GGe-jk-zgu" id="BMh-yl-paQ"/>
+                <outlet property="opinionButton" destination="dsZ-Uv-V9v" id="sUa-9A-3Tg"/>
+                <outlet property="seekHelpButton" destination="wvG-Zz-QGO" id="dUB-PW-Hxz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvG-Zz-QGO">
+                    <rect key="frame" x="334" y="114.5" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="IZ3-cD-WBo"/>
+                        <constraint firstAttribute="height" constant="30" id="WyY-L8-EI0"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="求助">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="ultraLight"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.91764705879999997" green="0.0" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" systemColor="systemGray5Color"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="tapTypeButton:" destination="-1" eventType="touchUpInside" id="uef-Oe-c2D"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Lz-a6-20z">
+                    <rect key="frame" x="20" y="114.5" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="QFZ-ng-dAU"/>
+                        <constraint firstAttribute="height" constant="30" id="fFG-H6-9fJ"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="出错">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.91764705879999997" green="0.0" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" systemColor="systemGray5Color"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="tapTypeButton:" destination="-1" eventType="touchUpInside" id="2Z6-9w-VkN"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="反馈类型选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvy-jR-3tQ">
+                    <rect key="frame" x="20" y="74" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGe-jk-zgu">
+                    <rect key="frame" x="20" y="357.5" width="120" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Bxg-0U-XKx"/>
+                        <constraint firstAttribute="width" constant="120" id="FQ1-91-qZp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <inset key="imageEdgeInsets" minX="5" minY="10" maxX="95" maxY="10"/>
+                    <state key="normal" title="同时发送错误日志" image="tureWhite">
+                        <color key="titleColor" systemColor="systemGray2Color"/>
+                    </state>
+                    <state key="selected" title="同时发送错误日志" image="tureWhiteSelect"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsZ-Uv-V9v">
+                    <rect key="frame" x="177" y="114.5" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="AHi-NP-VE9"/>
+                        <constraint firstAttribute="width" constant="60" id="pNs-xY-cdt"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="建议">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.91764705879999997" green="0.0" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" systemColor="systemGray5Color"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="tapTypeButton:" destination="-1" eventType="touchUpInside" id="4zo-ZB-RHt"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BxD-hN-B5o">
+                    <rect key="frame" x="20" y="164.5" width="374" height="160"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="9TI-Uv-Usc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" systemColor="systemGray5Color"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="gRe-PH-DtK"/>
+                    </connections>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的联系方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mb8-5v-7he">
+                    <rect key="frame" x="20" y="334.5" width="100" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="udk-Fu-0iY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="&lt;请输入您的联系方式&gt;" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BSw-mc-L2F">
+                    <rect key="frame" x="140" y="334" width="254" height="18.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz0-Mt-buO">
+                    <rect key="frame" x="334" y="362.5" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="GQC-GG-IV2"/>
+                    </constraints>
+                    <state key="normal" title="发送">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" systemColor="systemGray5Color"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="sendBtton:" destination="-1" eventType="touchUpInside" id="Sve-mH-Hq7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Dvy-jR-3tQ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="0fL-TS-Nfa"/>
+                <constraint firstItem="wvG-Zz-QGO" firstAttribute="trailing" secondItem="Dvy-jR-3tQ" secondAttribute="trailing" id="14u-TU-Hbz"/>
+                <constraint firstItem="fz0-Mt-buO" firstAttribute="centerY" secondItem="GGe-jk-zgu" secondAttribute="centerY" id="1dN-pW-vPU"/>
+                <constraint firstItem="7Lz-a6-20z" firstAttribute="leading" secondItem="Dvy-jR-3tQ" secondAttribute="leading" id="7J8-kq-h92"/>
+                <constraint firstItem="BSw-mc-L2F" firstAttribute="leading" secondItem="Mb8-5v-7he" secondAttribute="trailing" constant="20" id="7w9-lX-Ssi"/>
+                <constraint firstItem="GGe-jk-zgu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="E6e-bB-a81"/>
+                <constraint firstItem="BxD-hN-B5o" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="EOs-ky-b7h"/>
+                <constraint firstItem="wvG-Zz-QGO" firstAttribute="centerY" secondItem="7Lz-a6-20z" secondAttribute="centerY" id="ETm-eE-s94"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Dvy-jR-3tQ" secondAttribute="trailing" constant="20" id="I8B-hi-aVj"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="BSw-mc-L2F" secondAttribute="trailing" constant="20" id="Ihh-Xi-4Pc"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="BxD-hN-B5o" secondAttribute="trailing" constant="20" id="R2h-SN-A3W"/>
+                <constraint firstItem="BSw-mc-L2F" firstAttribute="centerY" secondItem="Mb8-5v-7he" secondAttribute="centerY" id="Trp-xh-TRl"/>
+                <constraint firstItem="dsZ-Uv-V9v" firstAttribute="top" secondItem="Dvy-jR-3tQ" secondAttribute="bottom" constant="20" id="U4D-az-ajF"/>
+                <constraint firstItem="dsZ-Uv-V9v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UM1-NM-4Vc"/>
+                <constraint firstItem="Mb8-5v-7he" firstAttribute="top" secondItem="BxD-hN-B5o" secondAttribute="bottom" constant="10" id="W0t-Dc-4bu"/>
+                <constraint firstItem="Dvy-jR-3tQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Wz7-UU-KeN"/>
+                <constraint firstItem="fz0-Mt-buO" firstAttribute="top" secondItem="BSw-mc-L2F" secondAttribute="bottom" constant="10" id="d3I-FK-A0n"/>
+                <constraint firstItem="Mb8-5v-7he" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="dTr-gq-hhx"/>
+                <constraint firstItem="BxD-hN-B5o" firstAttribute="top" secondItem="7Lz-a6-20z" secondAttribute="bottom" constant="20" id="ecg-fC-aNh"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="fz0-Mt-buO" secondAttribute="trailing" constant="20" id="fcO-tX-NTC"/>
+                <constraint firstItem="dsZ-Uv-V9v" firstAttribute="centerY" secondItem="7Lz-a6-20z" secondAttribute="centerY" id="hTd-7z-jbE"/>
+            </constraints>
+            <point key="canvasLocation" x="598.55072463768124" y="103.79464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tureWhite" width="200" height="200"/>
+        <image name="tureWhiteSelect" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
