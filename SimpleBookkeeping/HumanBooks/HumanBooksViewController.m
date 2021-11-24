@@ -29,7 +29,7 @@
     // Do any additional setup after loading the view from its nib.
     headerView  =  [[NSBundle mainBundle] loadNibNamed:@"HumanBooksViewController" owner:self options:nil][1];
     self.tableView.tableHeaderView = headerView;
-    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
+//    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
     [self rightBtnSava];
     [self getData];
 }

@@ -36,7 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
+//    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
     self.navigationController.navigationBar.topItem.title = @"我的资料";
     self.user = [BmobUser currentUser] ;
     [self rightBtnSava];

@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.navigationController.navigationBar setTranslucent:NO];
+//    [self.navigationController.navigationBar setTranslucent:NO];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector (ChangeNameNotification:) name:@ "ChangeNameNotification" object:nil];
     self.view.backgroundColor = [UIColor whiteColor];

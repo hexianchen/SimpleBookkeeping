@@ -5,6 +5,7 @@
 //  Created by 贺显臣 on 2021/10/11.
 //
 
+
 #import "RecoredEditVC.h"
 #import <Masonry/Masonry.h>
 #import "TypeCollectionViewCell.h"
@@ -180,7 +181,7 @@
     UIBarButtonItem *nagetiveSpacer = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
     nagetiveSpacer.width = -10;//这个值可以根据自己需要自己调整
     self.navigationItem.rightBarButtonItems = @[nagetiveSpacer, rightBar];
-    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
+//    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
     
     self.moneyL.text = [NSString stringWithFormat:@"%.2f" ,self.choseRecord.money];
     self.moneyString = [NSMutableString stringWithString: self.moneyL.text];

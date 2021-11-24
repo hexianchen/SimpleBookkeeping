@@ -40,7 +40,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.topItem.title  = @"";
     self.title = @"账单";
-    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
+//    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
     self.choseYear = [Tool getDate:[NSDate date] dateType:@"YYYY"];
     self.choseMonth = [Tool getDate:[NSDate date] dateType:@"MM"];
 

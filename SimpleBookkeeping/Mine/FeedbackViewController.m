@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
+//    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
     self.navigationController.navigationBar.topItem.title = @"意见反馈";
     self.contentTextView.text = @"请输入您宝贵的建议或问题，我们将及时反馈...";
     self.contentTextView.textColor = [UIColor systemGray5Color];
