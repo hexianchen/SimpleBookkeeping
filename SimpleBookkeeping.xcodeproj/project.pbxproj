@@ -40,7 +40,7 @@
 		D838A4F12719D82B00317F58 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D838A4EF2719D82B00317F58 /* MineViewController.xib */; };
 		D849470327107D70006900D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D849470227107D70006900D9 /* AppDelegate.m */; };
 		D849470627107D70006900D9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D849470527107D70006900D9 /* SceneDelegate.m */; };
-		D849470927107D70006900D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D849470827107D70006900D9 /* ViewController.m */; };
+		D849470927107D70006900D9 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D849470827107D70006900D9 /* HomeViewController.m */; };
 		D849470C27107D70006900D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D849470A27107D70006900D9 /* Main.storyboard */; };
 		D849470F27107D70006900D9 /* SimpleBookkeeping.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D849470D27107D70006900D9 /* SimpleBookkeeping.xcdatamodeld */; };
 		D849471127107D79006900D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D849471027107D79006900D9 /* Assets.xcassets */; };
@@ -62,6 +62,7 @@
 		D8D26A9E2721873E00D121F9 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D26A9D2721873E00D121F9 /* DetailViewController.xib */; };
 		D8D26AA127218F9700D121F9 /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D26AA027218F9700D121F9 /* DetailView.m */; };
 		D8D26AA327218FD100D121F9 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8D26AA227218FD100D121F9 /* DetailView.xib */; };
+		D8E8E574274FADBF00625B39 /* MainNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E8E573274FADBF00625B39 /* MainNavigationViewController.m */; };
 		D8ED6F08271C81420031ABF2 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ED6F07271C81420031ABF2 /* UserInfoModel.m */; };
 		D8ED6F11271C8A150031ABF2 /* MineDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ED6F0F271C8A150031ABF2 /* MineDetailViewController.m */; };
 		D8ED6F12271C8A150031ABF2 /* MineDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8ED6F10271C8A150031ABF2 /* MineDetailViewController.xib */; };
@@ -130,8 +131,8 @@
 		D849470227107D70006900D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D849470427107D70006900D9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		D849470527107D70006900D9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		D849470727107D70006900D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D849470827107D70006900D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D849470727107D70006900D9 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D849470827107D70006900D9 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		D849470B27107D70006900D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D849470E27107D70006900D9 /* SimpleBookkeeping.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleBookkeeping.xcdatamodel; sourceTree = "<group>"; };
 		D849471027107D79006900D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,6 +165,8 @@
 		D8D26A9F27218F9700D121F9 /* DetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
 		D8D26AA027218F9700D121F9 /* DetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
 		D8D26AA227218FD100D121F9 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		D8E8E572274FADBF00625B39 /* MainNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainNavigationViewController.h; sourceTree = "<group>"; };
+		D8E8E573274FADBF00625B39 /* MainNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainNavigationViewController.m; sourceTree = "<group>"; };
 		D8ED6F06271C81420031ABF2 /* UserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
 		D8ED6F07271C81420031ABF2 /* UserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
 		D8ED6F0E271C8A150031ABF2 /* MineDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineDetailViewController.h; sourceTree = "<group>"; };
@@ -320,8 +323,10 @@
 				D849470227107D70006900D9 /* AppDelegate.m */,
 				D849470427107D70006900D9 /* SceneDelegate.h */,
 				D849470527107D70006900D9 /* SceneDelegate.m */,
-				D849470727107D70006900D9 /* ViewController.h */,
-				D849470827107D70006900D9 /* ViewController.m */,
+				D8E8E572274FADBF00625B39 /* MainNavigationViewController.h */,
+				D8E8E573274FADBF00625B39 /* MainNavigationViewController.m */,
+				D849470727107D70006900D9 /* HomeViewController.h */,
+				D849470827107D70006900D9 /* HomeViewController.m */,
 				D849470A27107D70006900D9 /* Main.storyboard */,
 				D82FADA0272ED4F900D12A3C /* HumanBooks */,
 				D8E87792271B1CDC00CE5032 /* Detail */,
@@ -566,6 +571,7 @@
 				D838A4D52716EFFF00317F58 /* SortManagementVC.m in Sources */,
 				D80384E9272438D200FBAE54 /* HXCMBProgressHUD.m in Sources */,
 				D849471727107D79006900D9 /* main.m in Sources */,
+				D8E8E574274FADBF00625B39 /* MainNavigationViewController.m in Sources */,
 				D838A4D12715C9FE00317F58 /* TypeCollectionViewCell.m in Sources */,
 				D82FAD9B272E9AF200D12A3C /* HumanBooksCell.m in Sources */,
 				D86035FF272463CD00B8D86D /* DataSaveSetViewController.m in Sources */,
@@ -575,7 +581,7 @@
 				D8ED6F16271C8DE80031ABF2 /* CommonModel.m in Sources */,
 				D82E86272728709A00B755C0 /* SetBudgetSurplusVC.m in Sources */,
 				D8FB607D274BE4E900E7EDA3 /* RecordDetailVC.m in Sources */,
-				D849470927107D70006900D9 /* ViewController.m in Sources */,
+				D849470927107D70006900D9 /* HomeViewController.m in Sources */,
 				D838A4DE2717043000317F58 /* SortManagementHeaderView.m in Sources */,
 				D8ED6F08271C81420031ABF2 /* UserInfoModel.m in Sources */,
 				D8D26A7A271EE3C000D121F9 /* DetailViewController.m in Sources */,

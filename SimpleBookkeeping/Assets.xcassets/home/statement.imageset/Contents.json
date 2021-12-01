@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "basesalescouponSendList.png",
+      "filename" : "wanglaixianjin-14.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "wanglaixianjin-15.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "wanglaixianjin-16.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

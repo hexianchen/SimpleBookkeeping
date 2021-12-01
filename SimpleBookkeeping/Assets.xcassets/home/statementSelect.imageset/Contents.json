@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "bill-full.png",
+      "filename" : "wanglaixianjin-20.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "wanglaixianjin-19.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "wanglaixianjin-17.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

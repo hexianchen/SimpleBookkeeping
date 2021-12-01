@@ -4,14 +4,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Main Navigation View Controller-->
         <scene sceneID="fSF-Ya-d8M">
             <objects>
-                <navigationController interfaceStyle="light" id="gKc-V8-lL0" sceneMemberID="viewController">
+                <navigationController interfaceStyle="light" id="gKc-V8-lL0" customClass="MainNavigationViewController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wwe-rt-OBM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -27,22 +28,164 @@
         <!--账房记-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dab-gG-TTc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RhW-RR-4wW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="744"/>
+                                <color key="separatorColor" systemColor="systemGray6Color"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="FB1-7a-jC0"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eBs-hb-40Y"/>
+                                </connections>
+                            </tableView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omo-0P-2YX">
+                                <rect key="frame" x="0.0" y="832" width="414" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNt-uc-z4b">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="61"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="statement" imagePlacement="top">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="人情">
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="humanBookBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vpg-yA-AZp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg1-MQ-6UA">
+                                        <rect key="frame" x="138" y="0.0" width="138" height="61"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle"/>
+                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="VQp-tJ-oii">
+                                        <rect key="frame" x="276" y="0.0" width="138" height="61"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="-10" maxX="0.0" maxY="-10"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="mine" imagePlacement="top">
+                                            <backgroundConfiguration key="background" cornerRadius="0.0"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="我的">
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="mineBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wfZ-Ao-Tsk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="VQp-tJ-oii" firstAttribute="leading" secondItem="Sg1-MQ-6UA" secondAttribute="trailing" id="0CW-vE-Dw6"/>
+                                    <constraint firstItem="Sg1-MQ-6UA" firstAttribute="leading" secondItem="iNt-uc-z4b" secondAttribute="trailing" id="41F-Dn-xpQ"/>
+                                    <constraint firstAttribute="height" constant="64" id="6ZR-6e-j33"/>
+                                    <constraint firstItem="VQp-tJ-oii" firstAttribute="height" secondItem="Sg1-MQ-6UA" secondAttribute="height" id="EyI-uF-QcE"/>
+                                    <constraint firstItem="VQp-tJ-oii" firstAttribute="width" secondItem="iNt-uc-z4b" secondAttribute="width" id="Qgo-oY-f6f"/>
+                                    <constraint firstAttribute="trailing" secondItem="VQp-tJ-oii" secondAttribute="trailing" id="bym-wJ-yOS"/>
+                                    <constraint firstItem="VQp-tJ-oii" firstAttribute="centerY" secondItem="iNt-uc-z4b" secondAttribute="centerY" id="cpY-D8-NAp"/>
+                                    <constraint firstItem="VQp-tJ-oii" firstAttribute="top" secondItem="omo-0P-2YX" secondAttribute="top" id="lZi-RQ-6Q5"/>
+                                    <constraint firstItem="Sg1-MQ-6UA" firstAttribute="centerY" secondItem="iNt-uc-z4b" secondAttribute="centerY" id="mcg-uz-PLX"/>
+                                    <constraint firstItem="Sg1-MQ-6UA" firstAttribute="width" secondItem="iNt-uc-z4b" secondAttribute="width" id="nM6-QR-EuM"/>
+                                    <constraint firstItem="iNt-uc-z4b" firstAttribute="leading" secondItem="omo-0P-2YX" secondAttribute="leading" id="pRh-xV-FSk"/>
+                                    <constraint firstItem="VQp-tJ-oii" firstAttribute="height" secondItem="iNt-uc-z4b" secondAttribute="height" id="vA3-oJ-47y"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWT-bz-8Hk">
+                                <rect key="frame" x="175" y="800" width="64" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olN-ID-sym">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <backgroundConfiguration key="background" cornerRadius="0.0" image="add1">
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="strokeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" ">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" metaFont="smallSystem"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addRecordButn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p62-4h-9ao"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="olN-ID-sym" firstAttribute="top" secondItem="cWT-bz-8Hk" secondAttribute="top" id="4OW-KI-DpS"/>
+                                    <constraint firstAttribute="bottom" secondItem="olN-ID-sym" secondAttribute="bottom" id="CNe-nV-Qvv"/>
+                                    <constraint firstAttribute="height" constant="64" id="DRF-u7-PvW"/>
+                                    <constraint firstItem="olN-ID-sym" firstAttribute="leading" secondItem="cWT-bz-8Hk" secondAttribute="leading" id="G6o-cu-arh"/>
+                                    <constraint firstAttribute="trailing" secondItem="olN-ID-sym" secondAttribute="trailing" id="QQu-MW-H5f"/>
+                                    <constraint firstAttribute="width" constant="64" id="nsr-cC-ZuP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LoI-d6-559"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RhW-RR-4wW" firstAttribute="top" secondItem="LoI-d6-559" secondAttribute="top" id="28Q-78-fMV"/>
+                            <constraint firstItem="LoI-d6-559" firstAttribute="trailing" secondItem="RhW-RR-4wW" secondAttribute="trailing" id="6q8-rA-FQn"/>
+                            <constraint firstItem="omo-0P-2YX" firstAttribute="leading" secondItem="LoI-d6-559" secondAttribute="leading" id="A1u-kF-9xf"/>
+                            <constraint firstItem="omo-0P-2YX" firstAttribute="top" secondItem="RhW-RR-4wW" secondAttribute="bottom" id="IPj-YH-4z4"/>
+                            <constraint firstItem="cWT-bz-8Hk" firstAttribute="centerX" secondItem="Dab-gG-TTc" secondAttribute="centerX" id="NCd-yI-UeW"/>
+                            <constraint firstAttribute="bottom" secondItem="omo-0P-2YX" secondAttribute="bottom" id="atv-2a-pbl"/>
+                            <constraint firstItem="LoI-d6-559" firstAttribute="trailing" secondItem="omo-0P-2YX" secondAttribute="trailing" id="pvq-rf-v7U"/>
+                            <constraint firstItem="RhW-RR-4wW" firstAttribute="leading" secondItem="LoI-d6-559" secondAttribute="leading" id="x6i-nc-feZ"/>
+                            <constraint firstAttribute="bottom" secondItem="cWT-bz-8Hk" secondAttribute="bottom" constant="32" id="zfv-GR-xSv"/>
+                        </constraints>
+                    </view>
                     <navigationItem key="navigationItem" title="账房记" id="k1t-nm-b4M">
-                        <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="3RR-j2-mLr">
-                            <color key="tintColor" systemColor="systemGrayColor"/>
+                        <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="76l-o4-28l">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="RhW-RR-4wW" id="Tlz-LP-ckP"/>
+                        <outlet property="view" destination="Dab-gG-TTc" id="ZIu-hW-sqk"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="493" y="-320"/>
+            <point key="canvasLocation" x="492.75362318840581" y="-320.08928571428572"/>
         </scene>
     </scenes>
     <resources>
+        <image name="add1" width="64" height="64"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="mine" width="30" height="30"/>
+        <image name="statement" width="30" height="30"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

@@ -121,7 +121,7 @@
           [self.datePicker mas_makeConstraints:^(MASConstraintMaker *make) {
               make.top.mas_equalTo(collectionView.mas_bottom).mas_offset(5);
               make.left.mas_equalTo(self.view).offset(10);
-              make.right.mas_equalTo(self.view);
+//              make.right.mas_equalTo(self.view);
               make.height.mas_equalTo(60);
           }];
       } else {

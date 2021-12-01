@@ -24,7 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    [self.navigationController.navigationBar setTranslucent:NO];
+    
+    [self.navigationController.navigationBar setTranslucent:NO];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector (ChangeNameNotification:) name:@ "ChangeNameNotification" object:nil];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -83,6 +84,8 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 -(void) selectIncomeBtn{
+    self.selectView.backgroundColor = [UIColor clearColor];
+
     self.incomeBtn.selected = !self.incomeBtn.selected;
     self.expenseBut.selected = !self.expenseBut.selected;
     if (self.incomeBtn.selected) {
@@ -113,6 +116,7 @@
 }
 
 - (void)handleSwipeFrom:(UISwipeGestureRecognizer *)recognizer{
+    self.selectView.backgroundColor = [UIColor clearColor];
     if(recognizer.direction == UISwipeGestureRecognizerDirectionLeft && !self.expenseBut.selected) {
         NSLog(@"swipe left");
         self.incomeBtn.selected = !self.incomeBtn.selected;
